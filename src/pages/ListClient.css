@@ -1,0 +1,100 @@
+.list-client {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-client .MuiTextField-root {
+  width: 100%;
+  flex: 1;
+}
+
+.list-client button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #ddd;
+  width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.client span {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+.icon-button {
+  display: flex;
+}
+
+#icons:hover {
+  transform: scale(1.1);
+  background-color: lightblue;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+th {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  color: #333;
+}
+
+.client-list {
+  transition: background-color 0.3s ease;
+}
