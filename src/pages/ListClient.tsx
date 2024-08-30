@@ -15,7 +15,6 @@ import { useNavigate } from 'react-router-dom';
     TODO: ERRO de requisição infinita relacionada ao handleSearchAllClient
 */
 
-
 export const ListClient = () => {
     const api = useApi();
     const navigate = useNavigate()
