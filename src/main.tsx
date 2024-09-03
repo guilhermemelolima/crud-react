@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route element={<App />}>
           <Route path="/" element={<CreateUser/>} />
-          <Route path="/update-client" element={<UpdateClient/>} />
+          <Route path="/update-client/:id" element={<UpdateClient/>} />
           <Route path="/list-client" element={<ListClient/>} />
         </Route>
       </Routes>

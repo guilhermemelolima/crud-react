@@ -9,9 +9,6 @@ export const NavBar = () => {
             <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
                 Cadastro de cliente
             </Link>
-            <Link to="/update-client" className={location.pathname === '/update-client' ? 'active' : ''}>
-                Atualização de cliente
-            </Link>
             <Link to="/list-client" className={location.pathname === '/list-client' ? 'active' : ''}>
                 Listagem de cliente
             </Link>

@@ -1,22 +1,14 @@
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
-import Alert from '@mui/material/Alert';
-import AlertTitle from '@mui/material/AlertTitle';
-import IconButton from '@mui/material/IconButton';
+import {Button, TextField, Alert, AlertTitle, IconButton} from '@mui/material';
 import { FaSearch, FaUserCircle, FaUserEdit } from 'react-icons/fa';
 import { FaDeleteLeft } from "react-icons/fa6";
 import { ClientType } from '../types/ClientType';
-import { useApi } from '../hooks/UseApi';
+import { UseApi } from '../hooks/UseApi';
 import { ChangeEvent, useEffect, useState } from 'react';
 import './ListClient.css'
 import { useNavigate } from 'react-router-dom';
 
-/*
-    TODO: ERRO de requisição infinita relacionada ao handleSearchAllClient
-*/
-
 export const ListClient = () => {
-    const api = useApi();
+    const api = UseApi();
     const navigate = useNavigate()
 
     const [message, setMessage] = useState('');
@@ -42,7 +34,7 @@ export const ListClient = () => {
 
     useEffect(() => {
         handleSearchAllClient();
-    });
+    },[]);
 
     async function handleSearch() {
         if (cpf !== '') {
@@ -86,7 +78,7 @@ export const ListClient = () => {
 		setcpf(event.target.value);
 	}
 
-    const redirectTo = () => {navigate('/update-client')}
+    const redirectTo = () => {navigate(`/update-client/${client?.id}`)}
 
     return (
         <div className="list-client">
